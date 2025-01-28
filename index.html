@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DebaterHub Deliverable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>DebaterHub Research Page</h1>
+    <div class="video">
+        <video autoplay muted loop width="100%" height="auto">
+            <source src="assets/dhub-demo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="caption">
+        <p>An interactive platform for middle and highschool level students to research and prepare for debates.</p>
+    </div>  
+
+
+</header>
+<body>
+
+    <h2>Features</h2>
+
+    <div class="alternating-columns">
+        <!-- Row 1 -->
+        <div class="column left">
+            <img src="assets/planet1.jpeg" alt="Image 1" />
+        </div>
+        <div class="column right">
+            <div class="caption">
+                <p>The user is able to access the documents and passages from the research database in an external source that is verified as scholarly and credible.</p>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="column left">
+            <div class="caption">
+                <p>This is an interactive 3D platform built with Three.js where students can look through search results represented as planets in an immersive space.
+                    A navigational sidebar displays data returned by the database query.
+
+                </p>
+            </div>
+        </div>
+        <div class="column right">
+            <img src="assets/planet3.jpeg" alt="Image 2" />
+        </div>
+
+        <!-- Row 3 -->
+        <div class="column left">
+            <div class="caption">
+                <p>The hierarchical structure of the returned data (clusters→ documents→ sections→ passages) may be explored using click-and-drag navigation.
+                    Back button functionality re-generates the objects of the previous scene. A stack data structure was used to track the user’s movement through the levels of the returned data.
+
+                    </p>
+            </div>
+        </div>
+        <div class="column right">
+            <img src="assets/planet4.jpeg" alt="Image 3" />
+        </div>
+
+        <!-- Row 4 -->
+        <div class="column left">
+            <img src="assets/planet2.jpeg" alt="Image 4" />
+        </div>
+        <div class="column right">
+            <div class="caption">
+                <p>Passages may be selected within the Three.js scene. These passages are saved, persisted in the user’s browser, and displayed on the UI sidebar. Here, the user may delselect passages or display their full text upon click.
+                </p>
+            </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="column left">
+            <div class="caption">
+                <p>When the user clicks an object, information (e.g. data type, document link, title) is displayed in a popup sidebar and next-level elements are generated on the scene, with GSAP animations providing smooth transitions.</p>
+            </div>
+        </div>
+        <div class="column right">
+            <img src="assets/planet5.jpeg" alt="Image 5" />
+        </div>
+
+    </div>
+
+</body>
+
+</html>
