@@ -1,4 +1,4 @@
-/* Font Faces */
+
 @font-face {
     font-family: 'Orbitron';
     src: url(fonts/Orbitron-VariableFont_wght.ttf);
@@ -9,27 +9,27 @@
     src: url(fonts/Ubuntu-Regular.ttf);
 }
 
-/* Global styles */
+
 * {
-    box-sizing: border-box;  /* Ensures consistent box sizing */
+    box-sizing: border-box;  
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: black;
-    color: white;  /* Ensures text is visible against dark background */
+    color: white;  
     margin: 0;
     padding: 0;
 }
 
-/* Header */
+
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 20px;  /* Padding to avoid sticking to edges */
+    padding: 20px; 
 }
 
 h1 {
@@ -40,63 +40,63 @@ h1 {
     color: #73849c;
 }
 
-/* Video Section */
+
 .video {
     width: 50%;
     max-width: 900px;
     height: auto;
-    margin-bottom: 20px; /* Adds spacing after the video */
-    border-radius: 25px; /* Increased border radius */
+    margin-bottom: 20px;
+    border-radius: 25px; 
     overflow: hidden;
     border: solid;
     border-color: #9a9ba8;
 }
 
-/* Captions */
+
 .caption {
     background-color: #73849c;
     color: black;
     padding: 10px 30px;
     margin-top: 20px;
-    border-radius: 25px;  /* Rounded corners for a cleaner look */
+    border-radius: 25px; 
     max-width: 700px;
 }
 
-/* Features Section */
+
 h2 {
     text-align: center;
     font-size: 2.5rem;
     margin: 40px 0;
 }
 
-/* Alternating Columns */
+
 .alternating-columns {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;  /* Adds space between items */
-    margin-bottom: 40px;  /* Adds space below the last row */
-    padding: 0 200px; /* Match header side padding */
+    gap: 20px; 
+    margin-bottom: 40px; 
+    padding: 0 200px; 
 }
 
-/* Each column container */
+
 .column {
-    width: 48%;  /* Two columns per row */
-    margin-bottom: 20px;  /* Spacing between rows */
+    width: 48%;  
+    margin-bottom: 20px;  
     display: flex;
-    flex-direction: column; /* Stack the image and caption vertically */
+    flex-direction: column; 
 }
 
-/* Image Styles */
+
 .column img {
     width: 100%;
     height: auto;
-    border-radius: 25px;  /* Optional: adds rounded corners to the images */
-    padding: 15px; /* Padding for better spacing around the images */
+    border-radius: 25px;  
+    padding: 15px; 
     border: solid 2px #9a9ba8;
 }
 
-/* Caption Styling */
+
 .caption {
     background-color: #9a9ba8;
     color: black;
@@ -106,18 +106,18 @@ h2 {
     margin-top: 20px;
 }
 
-/* Ensure images and captions alternate properly */
+
 .alternating-columns .column:nth-child(odd) {
-    order: 1; /* Left column first */
+    order: 1; 
 }
 
 .alternating-columns .column:nth-child(even) {
-    order: 2; /* Right column second */
+    order: 2;
 }
 
-/* Make the layout responsive on smaller screens */
+
 @media (max-width: 768px) {
     .column {
-        width: 100%;  /* Stacks columns vertically on smaller screens */
+        width: 100%; 
     }
 }
